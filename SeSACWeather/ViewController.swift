@@ -153,6 +153,8 @@ extension ViewController: CLLocationManagerDelegate{
                 self.windLabel.text = "현재 풍속은 \(weather[0].wind)m/s 입니다."
             }
             getCurrentDate()
+            print(coordinate)
+            convertToAddressWith(coordinate: coordinate)
 
         }
         
@@ -211,4 +213,21 @@ extension ViewController: CLLocationManagerDelegate{
         default: print("Default")
         }
     }
+    
+    func convertToAddressWith(coordinate: CLLocationCoordinate2D) {
+            let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+            let geocoder = CLGeocoder()
+            let locale = Locale(identifier: "Ko-kr")
+            geocoder.reverseGeocodeLocation(location, preferredLocale: locale) { [weak self] placemarks, _ in
+                guard let placemarks = placemarks?.first,
+                      let dong = placemarks.subLocality,
+                      let city = placemarks.locality
+                else { return }
+                DispatchQueue.main.async {
+                self?.locationLabel.text = "\(city), \(dong)"
+           
+            }
+        }
+    }
+    
 }

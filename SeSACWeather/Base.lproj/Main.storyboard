@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울, 영등포구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s52-7L-0Ta">
-                                <rect key="frame" x="80" y="129" width="207" height="40"/>
+                                <rect key="frame" x="80" y="129" width="269" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SPe-Xh-qmr"/>
                                 </constraints>
@@ -137,7 +137,7 @@
                             <constraint firstItem="UrP-72-Y6N" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0647321" id="KAz-ka-HSS"/>
                             <constraint firstItem="RSx-be-5CN" firstAttribute="top" secondItem="wFT-D4-YCC" secondAttribute="bottom" constant="20" id="Mw5-BL-Nww"/>
                             <constraint firstItem="wFT-D4-YCC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O6l-6R-b7k"/>
-                            <constraint firstItem="s52-7L-0Ta" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="PB5-CH-g40"/>
+                            <constraint firstItem="s52-7L-0Ta" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.65" id="PB5-CH-g40"/>
                             <constraint firstItem="RSx-be-5CN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SPj-R5-UOP"/>
                             <constraint firstItem="Aid-fP-FAo" firstAttribute="centerY" secondItem="beS-r6-TTO" secondAttribute="centerY" id="T0u-tn-5A5"/>
                             <constraint firstItem="ZVJ-ui-H5H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="UYL-oe-5a7"/>
